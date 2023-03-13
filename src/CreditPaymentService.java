@@ -1,8 +1,13 @@
 public class CreditPaymentService {
-    public int calculate(int credit, double index) {
+    public int calculate(int a, int b, int c) {
         int result;
-        result = (int) (credit * ((index / 12 / 100) / (1 - Math.pow (1 + index / 12 / 100, -12))));
+        double percent = 9.99;
+        int credit = 1_000_000;
+        result = (int) (credit * ((percent / a / 100) / (1 - Math.pow(1 + percent/ a / 100, -a))));
+        result = (int) (credit * ((percent / b / 100) / (1 - Math.pow(1 + percent / b / 100, -b))));
+        result = (int) (credit * ((percent / c / 100) / (1 - Math.pow(1 + percent/ c / 100, -c))));
         return result;
-        }
+    }
 }
+
 

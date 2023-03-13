@@ -1,10 +1,14 @@
 public class Main {
     public static void main(String[] args) {
         CreditPaymentService service = new CreditPaymentService();
-        int credit = 1_000_000;
-        double index = 9.99;
-        int percent = (int) index;
-        int payment = service.calculate(credit, index);
-        System.out.println(payment);
+        int a = 12;
+        int b = 24;
+        int c = 36;
+        int p = service.calculate(a, b, c);
+        System.out.println(p);
+        int pa = service.calculate(a, b, c);
+        System.out.println(pa);
+        int pay = service.calculate(a, b, c);
+        System.out.println(pay);
     }
 }
