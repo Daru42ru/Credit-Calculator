@@ -1,14 +1,13 @@
 public class Main {
     public static void main(String[] args) {
         CreditPaymentService service = new CreditPaymentService();
-        int a = 12;
-        int b = 24;
-        int c = 36;
-        int p = service.calculate(a, b, c);
-        System.out.println(p);
-        int pa = service.calculate(a, b, c);
-        System.out.println(pa);
-        int pay = service.calculate(a, b, c);
-        System.out.println(pay);
+        double percent = 9.99;
+        int credit = 1_000_000;
+        int paymentOne = service.calculate(percent, credit);
+        System.out.println(paymentOne);
+        int paymentTwo = service.calculate(percent, credit);
+        System.out.println(paymentTwo);
+        int paymentThree = service.calculate(percent, credit);
+        System.out.println(paymentThree);
     }
 }
